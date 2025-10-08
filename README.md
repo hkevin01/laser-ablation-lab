@@ -523,6 +523,68 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install cupy-cuda11x
 ```
 
+### Troubleshooting
+
+#### GPG Signing Issues
+
+If you encounter "gpg failed to sign the data" errors when committing in VS Code:
+
+**Quick Fix:**
+
+```bash
+# Run the automated fix script
+./scripts/fix_gpg_globally.sh
+```
+
+**Manual Fix:**
+
+```bash
+# Disable GPG signing globally
+git config --global commit.gpgsign false
+
+# Or disable only in VS Code settings
+# Add to your VS Code settings.json:
+# "git.enableCommitSigning": false
+```
+
+**Root Cause:** VS Code's git integration sometimes conflicts with GPG agent configuration, especially in containerized or remote development environments.
+
+#### Container Issues
+
+**Permission Errors:**
+
+```bash
+# Fix Docker permissions
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+**Port Conflicts:**
+
+```bash
+# Check for conflicting services
+sudo netstat -tulpn | grep :8888
+# Kill conflicting processes or change ports in docker-compose.yml
+```
+
+#### Performance Issues
+
+**Large Simulation Memory:**
+
+```bash
+# Monitor memory usage
+docker stats
+# Increase Docker memory limits in Docker Desktop settings
+```
+
+**Slow Import Times:**
+
+```bash
+# Clear Python cache
+find . -name "__pycache__" -type d -exec rm -rf {} +
+find . -name "*.pyc" -delete
+```
+
 ---
 
 ## Usage Examples
