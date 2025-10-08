@@ -92,7 +92,7 @@
     "reportMissingImports": "information",
     "reportMissingTypeStubs": "information"
   },
-  
+
   // File associations
   "files.associations": {
     "*.yaml": "yaml",
