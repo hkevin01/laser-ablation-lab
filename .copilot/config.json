@@ -1,0 +1,32 @@
+{
+  "project_type": "physics_simulation",
+  "language": "python",
+  "domain": "aerospace_engineering",
+  "physics_models": [
+    "laser_ablation",
+    "heat_transfer",
+    "momentum_coupling",
+    "orbital_dynamics"
+  ],
+  "code_style": {
+    "formatter": "black",
+    "linter": "ruff",
+    "type_checker": "mypy",
+    "max_line_length": 88
+  },
+  "testing": {
+    "framework": "pytest",
+    "coverage_threshold": 90,
+    "physics_validation": true
+  },
+  "documentation": {
+    "style": "google",
+    "include_units": true,
+    "include_references": true
+  },
+  "performance": {
+    "use_numpy": true,
+    "consider_numba": true,
+    "profile_hotspots": true
+  }
+}

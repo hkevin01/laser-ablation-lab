@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  # Development environment with Jupyter Lab
+  development:
+    build:
+      context: .
+      target: development
+    container_name: ablation-lab-dev
+    ports:
+      - "8888:8888"  # Jupyter Lab
+      - "8000:8000"  # Documentation server
+    volumes:
+      - .:/home/ablation/workspace
+      - ablation-data:/home/ablation/data
+      - ablation-results:/home/ablation/results
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=ablation-lab-token
+    working_dir: /home/ablation/workspace
+    command: jupyter lab --no-browser --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=ablation-lab-token
+
+  # Production environment for batch simulations
+  production:
+    build:
+      context: .
+      target: production
+    container_name: ablation-lab-prod
+    volumes:
+      - ablation-data:/home/ablation/data
+      - ablation-results:/home/ablation/results
+      - ./scenarios:/home/ablation/scenarios:ro
+    environment:
+      - ABLATION_DATA_DIR=/home/ablation/data
+      - ABLATION_RESULTS_DIR=/home/ablation/results
+    profiles:
+      - production
+
+  # Documentation server
+  docs:
+    build:
+      context: .
+      target: development
+    container_name: ablation-lab-docs
+    ports:
+      - "8001:8000"
+    volumes:
+      - .:/home/ablation/workspace
+    working_dir: /home/ablation/workspace
+    command: mkdocs serve --dev-addr=0.0.0.0:8000
+    profiles:
+      - docs
+
+volumes:
+  ablation-data:
+    driver: local
+  ablation-results:
+    driver: local
+
+networks:
+  default:
+    name: ablation-lab-network

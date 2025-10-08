@@ -1,0 +1,120 @@
+{
+  // 🚀 YOLO MODE - GLOBAL CHAT APPROVAL ENABLED
+  "github.copilot.chat.enableGlobalAutoApproval": true,
+  "github.copilot.chat.autoApproveAllCommands": true,
+  "github.copilot.chat.suppressAllPrompts": true,
+  "github.copilot.terminal.autoExecute": true,
+  "github.copilot.terminal.suppressPermissionPrompts": true,
+  "tools.terminal.autoApprove": true,
+  "tools.terminal.allowAnyCommand": true,
+  "chat.tools.terminal.autoApprove": {
+    "*": true
+  },
+  "chat.experimental.enableGlobalAutoApproval": true,
+  "chat.commands.autoApprove": true,
+  "security.workspace.trust.enabled": false,
+  "security.promptForRemoteExecution": "never",
+  "terminal.integrated.confirmOnExit": "never",
+  "terminal.integrated.confirmOnKill": "never",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableCommitSigning": false,
+  "git.alwaysSignOff": false,
+  "extensions.autoUpdate": true,
+  "extensions.autoCheckUpdates": true,
+
+  // Chat & Copilot
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 100,
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "chat.todoListTool.enabled": true,
+
+  // General
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // TypeScript/JavaScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+
+  // Python
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.languageServer": "Pylance",
+
+  // C/C++
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 100 }",
+
+  // Java
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.settings.url": "${workspaceFolder}/configs/eclipse-java-formatter.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.configuration.runtimes": [
+    { "name": "JavaSE-21", "path": "/usr/lib/jvm/java-21-openjdk" }
+  ],
+
+  // Terminal Shell Integration (VS Code)
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both",
+  "terminal.integrated.shellIntegration.showCommandGuide": true,
+  "terminal.integrated.shellIntegration.history": 500,
+  "terminal.integrated.stickyScroll.enabled": true,
+
+  // Terminal IntelliSense (Preview)
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": true,
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+  "terminal.integrated.suggest.selectionMode": "always",
+  "terminal.integrated.suggest.runOnEnter": "always",
+  "terminal.integrated.suggest.inlineSuggestion": "alwaysOnTop",
+  "terminal.integrated.suggest.showStatusBar": true,
+
+  // Project-specific naming conventions
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "information",
+    "reportMissingTypeStubs": "information"
+  },
+  
+  // File associations
+  "files.associations": {
+    "*.yaml": "yaml",
+    "*.yml": "yaml",
+    "*.toml": "toml",
+    "*.lock": "text"
+  },
+
+  // Search exclusions
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/env": true,
+    "**/.env": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.coverage": true,
+    "**/htmlcov": true,
+    "**/.git": true
+  }
+}
