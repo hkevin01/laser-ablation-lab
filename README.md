@@ -153,49 +153,49 @@ graph TB
 
 ### Core Physics & Numerical Computing
 
-| Technology | Purpose | Why Chosen | Key Benefits |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Key Benefits</sub> |
 |------------|---------|------------|--------------|
-| **Python 3.11+** | Primary language | Mature scientific ecosystem, readable code | Type hints, performance improvements, extensive libraries |
-| **NumPy** | Array computing | Industry standard, C-optimized | Vectorized operations, memory efficiency, broadcasting |
-| **SciPy** | Scientific algorithms | Comprehensive toolkit | ODE solvers, sparse matrices, optimization routines |
-| **Numba** | JIT compilation | Accelerate Python loops | Near-C performance, GPU support, scientific focus |
-| **JAX (Optional)** | Autodiff & XLA | Modern ML/scientific computing | Automatic differentiation, XLA compilation, functional programming |
+| <sub>**Python 3.11+**</sub> | <sub>Primary language</sub> | <sub>Mature scientific ecosystem, readable code</sub> | <sub>Type hints, performance improvements, extensive libraries</sub> |
+| <sub>**NumPy**</sub> | <sub>Array computing</sub> | <sub>Industry standard, C-optimized</sub> | <sub>Vectorized operations, memory efficiency, broadcasting</sub> |
+| <sub>**SciPy**</sub> | <sub>Scientific algorithms</sub> | <sub>Comprehensive toolkit</sub> | <sub>ODE solvers, sparse matrices, optimization routines</sub> |
+| <sub>**Numba**</sub> | <sub>JIT compilation</sub> | <sub>Accelerate Python loops</sub> | <sub>Near-C performance, GPU support, scientific focus</sub> |
+| <sub>**JAX (Optional)**</sub> | <sub>Autodiff & XLA</sub> | <sub>Modern ML/scientific computing</sub> | <sub>Automatic differentiation, XLA compilation, functional programming</sub> |
 
 ### Data Management & Persistence
 
-| Technology | Purpose | Why Chosen | Key Benefits |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Key Benefits</sub> |
 |------------|---------|------------|--------------|
-| **HDF5 (h5py)** | Large dataset storage | Self-describing, cross-platform | Hierarchical data, compression, metadata |
-| **NetCDF4** | Scientific data exchange | Climate/weather standard | CF conventions, time series, gridded data |
-| **Pandas** | Structured data analysis | Tabular data manipulation | Time series, statistical functions, data cleaning |
-| **Pydantic** | Configuration validation | Type-safe data models | Runtime validation, JSON schema, clear errors |
+| <sub>**HDF5 (h5py)**</sub> | <sub>Large dataset storage</sub> | <sub>Self-describing, cross-platform</sub> | <sub>Hierarchical data, compression, metadata</sub> |
+| <sub>**NetCDF4**</sub> | <sub>Scientific data exchange</sub> | <sub>Climate/weather standard</sub> | <sub>CF conventions, time series, gridded data</sub> |
+| <sub>**Pandas**</sub> | <sub>Structured data analysis</sub> | <sub>Tabular data manipulation</sub> | <sub>Time series, statistical functions, data cleaning</sub> |
+| <sub>**Pydantic**</sub> | <sub>Configuration validation</sub> | <sub>Type-safe data models</sub> | <sub>Runtime validation, JSON schema, clear errors</sub> |
 
 ### Visualization & Analysis
 
-| Technology | Purpose | Why Chosen | Key Benefits |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Key Benefits</sub> |
 |------------|---------|------------|--------------|
-| **Matplotlib** | Static publication plots | Scientific standard | Publication quality, extensive customization, LaTeX support |
-| **Plotly** | Interactive visualizations | Modern web-based | Real-time updates, dashboards, 3D plotting |
-| **PyVista** | 3D scientific visualization | VTK-based, Pythonic | Mesh processing, volume rendering, scientific datasets |
-| **Trimesh** | Geometric processing | Robust mesh handling | Boolean operations, collision detection, STL/OBJ support |
+| <sub>**Matplotlib**</sub> | <sub>Static publication plots</sub> | <sub>Scientific standard</sub> | <sub>Publication quality, extensive customization, LaTeX support</sub> |
+| <sub>**Plotly**</sub> | <sub>Interactive visualizations</sub> | <sub>Modern web-based</sub> | <sub>Real-time updates, dashboards, 3D plotting</sub> |
+| <sub>**PyVista**</sub> | <sub>3D scientific visualization</sub> | <sub>VTK-based, Pythonic</sub> | <sub>Mesh processing, volume rendering, scientific datasets</sub> |
+| <sub>**Trimesh**</sub> | <sub>Geometric processing</sub> | <sub>Robust mesh handling</sub> | <sub>Boolean operations, collision detection, STL/OBJ support</sub> |
 
 ### Development & Deployment
 
-| Technology | Purpose | Why Chosen | Key Benefits |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Key Benefits</sub> |
 |------------|---------|------------|--------------|
-| **Docker** | Containerization | Reproducible environments | Cross-platform, isolation, version control |
-| **Docker Compose** | Multi-service orchestration | Development simplicity | Service dependencies, networking, volumes |
-| **GitHub Actions** | CI/CD pipeline | Integrated with GitHub | Automated testing, free for OSS, matrix builds |
-| **Pre-commit** | Code quality gates | Prevent bad commits | Automated formatting, linting, security checks |
+| <sub>**Docker**</sub> | <sub>Containerization</sub> | <sub>Reproducible environments</sub> | <sub>Cross-platform, isolation, version control</sub> |
+| <sub>**Docker Compose**</sub> | <sub>Multi-service orchestration</sub> | <sub>Development simplicity</sub> | <sub>Service dependencies, networking, volumes</sub> |
+| <sub>**GitHub Actions**</sub> | <sub>CI/CD pipeline</sub> | <sub>Integrated with GitHub</sub> | <sub>Automated testing, free for OSS, matrix builds</sub> |
+| <sub>**Pre-commit**</sub> | <sub>Code quality gates</sub> | <sub>Prevent bad commits</sub> | <sub>Automated formatting, linting, security checks</sub> |
 
 ### Code Quality & Testing
 
-| Technology | Purpose | Why Chosen | Key Benefits |
+| <sub>Technology</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> | <sub>Key Benefits</sub> |
 |------------|---------|------------|--------------|
-| **Black** | Code formatting | Uncompromising formatter | Consistent style, no configuration, fast |
-| **Ruff** | Fast Python linter | Modern, comprehensive | Multiple tools in one, fast, configurable |
-| **MyPy** | Static type checking | Catch errors early | Type safety, IDE integration, gradual typing |
-| **Pytest** | Testing framework | Python standard | Fixtures, parametrization, extensive plugins |
+| <sub>**Black**</sub> | <sub>Code formatting</sub> | <sub>Uncompromising formatter</sub> | <sub>Consistent style, no configuration, fast</sub> |
+| <sub>**Ruff**</sub> | <sub>Fast Python linter</sub> | <sub>Modern, comprehensive</sub> | <sub>Multiple tools in one, fast, configurable</sub> |
+| <sub>**MyPy**</sub> | <sub>Static type checking</sub> | <sub>Catch errors early</sub> | <sub>Type safety, IDE integration, gradual typing</sub> |
+| <sub>**Pytest**</sub> | <sub>Testing framework</sub> | <sub>Python standard</sub> | <sub>Fixtures, parametrization, extensive plugins</sub> |
 
 ## Overview
 
@@ -420,11 +420,11 @@ F = Cm × P_laser
 
 **Regime Classification:**
 
-| Intensity Range | Regime | Typical Cm | Physics |
+| <sub>Intensity Range</sub> | <sub>Regime</sub> | <sub>Typical Cm</sub> | <sub>Physics</sub> |
 |----------------|--------|------------|---------|
-| < 10⁶ W/cm² | Thermal | 10-50 μN/W | Evaporation-dominated |
-| 10⁶-10⁸ W/cm² | Transition | 50-200 μN/W | Mixed thermal/plasma |
-| > 10⁸ W/cm² | Plasma | 100-500 μN/W | Plasma-mediated ablation |
+| <sub>< 10⁶ W/cm²</sub> | <sub>Thermal</sub> | <sub>10-50 μN/W</sub> | <sub>Evaporation-dominated</sub> |
+| <sub>10⁶-10⁸ W/cm²</sub> | <sub>Transition</sub> | <sub>50-200 μN/W</sub> | <sub>Mixed thermal/plasma</sub> |
+| <sub>> 10⁸ W/cm²</sub> | <sub>Plasma</sub> | <sub>100-500 μN/W</sub> | <sub>Plasma-mediated ablation</sub> |
 
 ---
 
@@ -698,16 +698,16 @@ Our development process emphasizes scientific rigor and reproducible research:
 
 ### Technology Stack Rationale
 
-| Component | Technology | Why Chosen | Alternatives Considered |
+| <sub>Component</sub> | <sub>Technology</sub> | <sub>Why Chosen</sub> | <sub>Alternatives Considered</sub> |
 |-----------|------------|-------------|------------------------|
-| **Core Language** | Python 3.11+ | Scientific ecosystem, type hints, performance improvements | C++ (too low-level), MATLAB (licensing), Julia (smaller ecosystem) |
-| **Numerical Computing** | NumPy + SciPy | Mature, optimized BLAS/LAPACK bindings, extensive algorithms | Pure Python (too slow), JAX (bleeding edge), Rust (immature sci stack) |
-| **Containerization** | Docker + Compose | Reproducible environments, HPC cluster deployment | Singularity (HPC-specific), Conda (dependency conflicts), Virtual envs (portability) |
-| **CI/CD** | GitHub Actions | Integrated with repository, matrix testing, artifact storage | GitLab CI (vendor lock-in), Jenkins (complexity), Travis CI (cost) |
-| **Documentation** | Sphinx + MyST | Scientific publishing standards, equation rendering, API docs | GitBook (limited math), Docusaurus (JS ecosystem), MkDocs (feature gaps) |
-| **Development Environment** | VS Code + Extensions | Remote development, Jupyter integration, debugging tools | PyCharm (resource heavy), Vim/Emacs (learning curve), Cloud IDEs (latency) |
-| **Version Control** | Git + LFS | Large binary file support, distributed development | Subversion (centralized), Mercurial (tooling), Perforce (commercial) |
-| **Package Management** | pip + pyproject.toml | Modern Python standards, dependency resolution | Poetry (complexity), Conda (conflicts), pipenv (maintenance issues) |
+| <sub>**Core Language**</sub> | <sub>Python 3.11+</sub> | <sub>Scientific ecosystem, type hints, performance improvements</sub> | <sub>C++ (too low-level), MATLAB (licensing), Julia (smaller ecosystem)</sub> |
+| <sub>**Numerical Computing**</sub> | <sub>NumPy + SciPy</sub> | <sub>Mature, optimized BLAS/LAPACK bindings, extensive algorithms</sub> | <sub>Pure Python (too slow), JAX (bleeding edge), Rust (immature sci stack)</sub> |
+| <sub>**Containerization**</sub> | <sub>Docker + Compose</sub> | <sub>Reproducible environments, HPC cluster deployment</sub> | <sub>Singularity (HPC-specific), Conda (dependency conflicts), Virtual envs (portability)</sub> |
+| <sub>**CI/CD**</sub> | <sub>GitHub Actions</sub> | <sub>Integrated with repository, matrix testing, artifact storage</sub> | <sub>GitLab CI (vendor lock-in), Jenkins (complexity), Travis CI (cost)</sub> |
+| <sub>**Documentation**</sub> | <sub>Sphinx + MyST</sub> | <sub>Scientific publishing standards, equation rendering, API docs</sub> | <sub>GitBook (limited math), Docusaurus (JS ecosystem), MkDocs (feature gaps)</sub> |
+| <sub>**Development Environment**</sub> | <sub>VS Code + Extensions</sub> | <sub>Remote development, Jupyter integration, debugging tools</sub> | <sub>PyCharm (resource heavy), Vim/Emacs (learning curve), Cloud IDEs (latency)</sub> |
+| <sub>**Version Control**</sub> | <sub>Git + LFS</sub> | <sub>Large binary file support, distributed development</sub> | <sub>Subversion (centralized), Mercurial (tooling), Perforce (commercial)</sub> |
+| <sub>**Package Management**</sub> | <sub>pip + pyproject.toml</sub> | <sub>Modern Python standards, dependency resolution</sub> | <sub>Poetry (complexity), Conda (conflicts), pipenv (maintenance issues)</sub> |
 
 ### Contributing Guidelines
 
